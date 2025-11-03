@@ -7,5 +7,22 @@
 </head>
 <body>
     <h1>Hello World!!!</h1>
+
+    <h2>Enter your name:</h2>
+  
+    <input type="text" id="userInput" placeholder="Type your name here">
+    <button onclick="sayHello()">Submit</button>
+  
+    <h3 id="message"></h3>
+  
+    <script>
+      function sayHello() {
+    
+        let name = document.getElementById("userInput").value;
+  
+    
+        document.getElementById("message").innerText = "Hello " + name + "!";
+      }
+    </script>
 </body>
 </html>
